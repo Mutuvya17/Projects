@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app" id="app">
+    <section class="card canvas-wrap" aria-labelledby="title">
+      <h1 id="title" class="muted">Random Meme Generator</h1>
+
+      <div style="width:100%;display:flex;gap:12px;align-items:center;justify-content:space-between;">
+        <div class="muted small">Press <kbd>R</kbd> to randomize • <span id="templateCount">0</span> templates</div>
+        <div class="history" id="historyChips" aria-hidden="true"></div>
+      </div>
+
+      <canvas id="memeCanvas" width="800" height="800" aria-label="Meme preview"></canvas>
+
+      <div class="controls" role="group" aria-label="Meme text controls">
+        <div style="flex:1 1 100%;">
+          <label for="topText">Top text</label>
+          <input id="topText" type="text" placeholder="Top text (optional)" />
+        </div>
+
+        <div style="flex:1 1 100%;">
+          <label for="bottomText">Bottom text</label>
+          <input id="bottomText" type="text" placeholder="Bottom text (optional)" />
+        </div>
+
+        <div style="width:120px;">
+          <label for="fontSize">Font size</label>
+          <input id="fontSize" type="number" min="20" max="200" step="2" value="48" />
+        </div>
+
+        <div style="width:120px;">
+          <label for="textColor">Text color</label>
+          <input id="textColor" type="color" value="#ffffff" />
+        </div>
+
+        <div style="width:120px;">
+          <label for="strokeColor">Stroke</label>
+          <input id="strokeColor" type="color" value="#000000" />
+        </div>
+      </div>
+
+      <div class="row" style="width:100%;margin-top:8px;">
+        <button id="randomBtn">Random Meme</button>
+        <button id="downloadBtn" class="secondary">Download</button>
+        <button id="shareBtn" class="secondary">Share</button>
+        <button id="clearTextBtn" class="secondary">Clear Text</button>
+      </div>
+
+      <div class="footer">
+        <div class="muted small">Tip: use short punchy text. Canvas export preserves styling.</div>
+        <div class="muted small brand">Made with ❤️</div>
+      </div>
+    </section>
+
+    <aside class="card sidebar" aria-labelledby="sidebarTitle">
+      <h2 id="sidebarTitle" class="muted">Templates & Settings</h2>
+
+      <div class="stack">
+        <label for="templateSelect">Choose template</label>
+        <select id="templateSelect" aria-label="Meme template list"></select>
+      </div>
+
+      <div class="stack">
+        <div class="row" style="justify-content:space-between;">
+          <div>
+            <label for="autoToggle">Auto-random</label>
+            <div class="muted small">Cycle every 3 seconds</div>
+          </div>
+          <div>
+            <input id="autoToggle" type="checkbox" />
+          </div>
+        </div>
+      </div>
+
+      <div class="stack">
+        <label for="fallbackCount">Fallback templates available</label>
+        <div class="muted small">
+          The generator tries the Imgflip API, but includes local templates if offline.
+        </div>
+      </div>
+
+      <div style="margin-top:8px;">
+        <button id="prevBtn" class="secondary">◀ Prev</button>
+        <button id="nextBtn" style="margin-left:8px;">Next ▶</button>
+      </div>
+
+      <div style="margin-top:12px;">
+        <div class="muted small">Keyboard shortcuts:</div>
+        <ul class="muted small" style="margin:6px 0 0 18px;padding:0;">
+          <li><strong>R</strong> random template</li>
+          <li><strong>Space</strong> redraw</li>
+          <li><strong>Enter</strong> download</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
