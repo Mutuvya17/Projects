@@ -1,0 +1,119 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #1d3557;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Survey Form */
+.survey-form {
+  background: white;
+  padding: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid #a8dadc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.survey-form label {
+  font-weight: bold;
+}
+
+.survey-form input,
+.survey-form select,
+.survey-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.survey-form input:focus,
+.survey-form select:focus,
+.survey-form textarea:focus {
+  outline: none;
+  border-color: #457b9d;
+  box-shadow: 0 0 5px rgba(69,123,157,0.5);
+}
+
+/* Fieldsets */
+fieldset {
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #1d3557;
+}
+
+/* Button */
+button {
+  background: #e63946;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #a4161a;
+}
+
+/* Hidden success message */
+.hidden {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+  color: #2a9d8f;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #1d3557;
+  color: white;
+  border-radius: 8px;
+}
+
+footer a {
+  color: #f1faee;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

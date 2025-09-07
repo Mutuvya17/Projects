@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Frontend Survey Form</h1>
+    <p>Project #5</p>
+  </header>
+
+  <main>
+    <form id="surveyForm" class="survey-form">
+      <!-- Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Age -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="10" max="100" placeholder="Enter your age" required>
+
+      <!-- Gender -->
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">-- Select your gender --</option>
+        <option value="male">Male ♂</option>
+        <option value="female">Female ♀</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Experience -->
+      <fieldset>
+        <legend>How would you rate your frontend development experience?</legend>
+        <label><input type="radio" name="experience" value="beginner" required> Beginner</label>
+        <label><input type="radio" name="experience" value="intermediate"> Intermediate</label>
+        <label><input type="radio" name="experience" value="advanced"> Advanced</label>
+      </fieldset>
+
+      <!-- Interests -->
+      <fieldset>
+        <legend>Which areas are you most interested in? (Select at least one)</legend>
+        <label><input type="checkbox" name="interest" value="html"> HTML</label>
+        <label><input type="checkbox" name="interest" value="css"> CSS</label>
+        <label><input type="checkbox" name="interest" value="javascript"> JavaScript</label>
+        <label><input type="checkbox" name="interest" value="react"> React</label>
+      </fieldset>
+
+      <!-- Feedback -->
+      <label for="feedback">Additional Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback here..."></textarea>
+
+      <!-- Submit -->
+      <button type="submit">Submit Survey</button>
+    </form>
+
+    <!-- Success Message -->
+    <p id="successMessage" class="hidden">✅ Thank you for submitting the survey, Eric!</p>
+  </main>
+
+  <footer>
+    <p>Created by <strong>Eric Nyamai</strong></p>
+    <p>Email: <a href="mailto:mutuvyaeric@gmail.com">mutuvyaeric@gmail.com</a></p>
+    <p>&copy; 2025 Survey Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
