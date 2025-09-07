@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric Nyamai - Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Eric's Store</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Eric’s Store</h2>
+      <p>Your one-stop shop for amazing products. Quality you can trust, prices you’ll love.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Our Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71BCccf31hL.jpg" alt="Product 1">
+        <h3>Wireless Headphones</h3>
+        <p>Enjoy crystal-clear sound with noise cancellation.</p>
+        <span class="price">$59</span>
+      </div>
+      <div class="product-card">
+        <img src="https://stahlgear.de/cdn/shop/files/Main_Schwarz.png?v=1723573562" alt="Product 2">
+        <h3>Smartwatch</h3>
+        <p>Track your health and stay connected anywhere.</p>
+        <span class="price">$129</span>
+      </div>
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/81eBm834zEL.jpg" alt="Product 3">
+        <h3>Bluetooth Speaker</h3>
+        <p>Portable, powerful, and perfect for every occasion.</p>
+        <span class="price">$89</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <h2>Choose Your Customer Subscription Plan</h2>
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3>Basic</h3>
+        <p class="price">$9/month</p>
+        <ul>
+          <li>✔️ 1 Product</li>
+          <li>✔️ Email Support</li>
+          <li>❌ Free Shipping</li>
+        </ul>
+        <button class="btn choose-plan">Select Basic</button>
+      </div>
+      <div class="pricing-card highlight">
+        <h3>Standard</h3>
+        <p class="price">$19/month</p>
+        <ul>
+          <li>✔️ 5 Products</li>
+          <li>✔️ Priority Support</li>
+          <li>✔️ Free Shipping</li>
+        </ul>
+        <button class="btn choose-plan">Select Standard</button>
+      </div>
+      <div class="pricing-card">
+        <h3>Premium</h3>
+        <p class="price">$39/month</p>
+        <ul>
+          <li>✔️ Unlimited Products</li>
+          <li>✔️ VIP Support</li>
+          <li>✔️ Free Shipping</li>
+        </ul>
+        <button class="btn choose-plan">Select Premium</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+   
+    <p>Email: <a href="mailto:mutuvyaeric@gmail.com">mutuvyaeric@gmail.com</a></p>
+    <p>&copy; 2025 Eric's Store. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
