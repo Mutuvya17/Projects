@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eric Nyamai | To-Do List App</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <h1>📝 To-Do List App</h1>
+     </header>
+
+  <main>
+    <section class="todo-app" aria-label="To-Do List">
+      <!-- Input -->
+      <form id="task-form" autocomplete="off" aria-label="Add new task">
+        <input type="text" id="task-input" placeholder="Enter a new task..." aria-label="Task input"/>
+        <button type="submit" id="add-btn">Add</button>
+      </form>
+
+      <!-- List -->
+      <ul id="task-list" aria-live="polite">
+        <!-- Tasks will appear here -->
+      </ul>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button id="clear-btn">Clear All</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by <strong>Eric Nyamai</strong> • <a href="mailto:mutuvyaeric@gmail.com">mutuvyaeric@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

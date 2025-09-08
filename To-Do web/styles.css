@@ -1,0 +1,128 @@
+/* -------- Reset & Base -------- */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* -------- Header / Footer -------- */
+.site-header, .site-footer {
+  text-align: center;
+  padding: 1rem;
+}
+.site-header h1 { margin: 0.3rem 0; }
+.site-header p { margin: 0; color: #6b7280; }
+
+.site-footer {
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+.site-footer a { color: #2563eb; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+
+/* -------- To-Do App Layout -------- */
+main {
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow:
+    0 20px 25px -5px rgba(0,0,0,.1),
+    0 10px 10px -5px rgba(0,0,0,.04);
+}
+
+/* -------- Input Form -------- */
+#task-form {
+  display: flex;
+  gap: 0.5rem;
+}
+#task-input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+#task-input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+#add-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+#add-btn:hover { background: #1d4ed8; }
+
+/* -------- Task List -------- */
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: background .2s;
+}
+.task-item:hover { background: #e5e7eb; }
+
+.task-text {
+  flex: 1;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.task-text.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background .2s;
+}
+.delete-btn:hover { background: #dc2626; }
+
+/* -------- Controls -------- */
+.controls {
+  display: flex;
+  justify-content: flex-end;
+}
+#clear-btn {
+  background: #f59e0b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+#clear-btn:hover { background: #d97706; }
