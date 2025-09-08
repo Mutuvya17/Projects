@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Clock — Eric Nyamai</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Digital Clock</h1>
+    <p>Updates every second • 12/24 toggle • timezone selector</p>
+  </header>
+
+  <main class="clock-app" role="application" aria-label="Digital clock">
+    <section class="clock-card" aria-live="polite">
+      <div id="time" class="time" aria-atomic="true">00:00:00</div>
+      <div id="ampm" class="ampm" aria-hidden="true">AM</div>
+      <div id="date" class="date">Sunday, January 1, 1970</div>
+
+      <div class="controls">
+        <label for="formatToggle" class="control-label">
+          <input id="formatToggle" type="checkbox" />
+          24-hour format
+        </label>
+
+        <label for="tzSelect" class="control-label">
+          Timezone:
+          <select id="tzSelect" aria-label="Select timezone">
+            <option value="local">Local</option>
+            <option value="UTC">UTC</option>
+            <option value="Africa/Nairobi">Africa/Nairobi</option>
+            <option value="America/New_York">America/New_York</option>
+            <option value="Asia/Tokyo">Asia/Tokyo</option>
+          </select>
+        </label>
+
+        <div class="button-row">
+          <button id="startBtn" class="btn">Start</button>
+          <button id="stopBtn" class="btn btn-secondary">Stop</button>
+        </div>
+      </div>
+
+      <p class="hint">Tip: Use the 24-hour toggle or choose a timezone to see times elsewhere.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by <strong>Eric Nyamai</strong> • <a href="mailto:mutuvyaeric@gmail.com">mutuvyaeric@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

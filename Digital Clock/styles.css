@@ -1,0 +1,125 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+
+/* Page layout */
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #0f172a 0%, #0b1220 55%, #071225 100%);
+  color: #e6eef8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+/* Header */
+.site-header { text-align: center; margin-bottom: 8px; }
+.site-header h1 { font-size: 1.8rem; letter-spacing: 0.4px; }
+.site-header p { color: #9fb4d8; font-size: 0.95rem; }
+
+/* Clock card */
+.clock-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 28px;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  text-align: center;
+}
+
+/* Time display */
+.time {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-variant-numeric: tabular-nums;
+  color: #f8fafc;
+}
+
+.ampm {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 1rem;
+  color: #a8c0db;
+  vertical-align: top;
+}
+
+/* Date */
+.date {
+  margin-top: 8px;
+  color: #b7cde6;
+  font-size: 1rem;
+}
+
+/* Controls */
+.controls {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-label {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: #d6e6fb;
+  font-size: 0.95rem;
+}
+
+/* Select */
+select {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #e6eef8;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+/* Buttons */
+.button-row { display:flex; gap: 8px; }
+
+.btn {
+  background: linear-gradient(180deg,#38bdf8,#0ea5e9);
+  color: #042f4a;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+.btn:hover { transform: translateY(-2px); }
+
+.btn-secondary {
+  background: transparent;
+  color: #a8d0ea;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Hint text */
+.hint {
+  margin-top: 12px;
+  color: #94b8df;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.site-footer {
+  color: #9fb4d8;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .time { font-size: 2.6rem; }
+  .clock-card { padding: 20px; }
+  .controls { gap: 8px; }
+}
