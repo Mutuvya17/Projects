@@ -1,0 +1,94 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Main Container */
+.countdown-container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-section {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="datetime-local"] {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background: #ff9800;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+/* Countdown Boxes */
+#countdown {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 80px;
+}
+
+.time-box span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffd700;
+}
